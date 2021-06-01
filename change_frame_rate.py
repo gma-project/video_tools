@@ -2,8 +2,6 @@ from __future__ import print_function, division
 import argparse
 import subprocess
 from pathlib import Path
-from joblib import Parallel, delayed
-from joblib.externals.loky import set_loky_pickler
 from joblib import wrap_non_picklable_objects
 from timeit import default_timer as timer
 
