@@ -2,7 +2,7 @@ import cv2
 import argparse
 from pathlib import Path
 
-def get_info(video_file):
+def get_video_info(video_file):
 	cap = cv2.VideoCapture(video_file)
 	fps = cap.get(cv2.CAP_PROP_FPS)
 	W = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
